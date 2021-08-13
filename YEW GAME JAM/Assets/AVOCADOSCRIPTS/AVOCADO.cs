@@ -5,24 +5,41 @@ using UnityEngine;
 public class AVOCADO : MonoBehaviour
 {
     public List<Sprite> avocadoStagesSprites = new List<Sprite>();
-    public int amountOfAvocadoClicks;
+    public int amountOfClicks;
+    public int neededClicks;
     public int avocadoIndex;
     public SpriteRenderer avocadoSprite;
+    public bool avocadoEat = true;
+
+    private void Update()
+    {
+        if (avocadoEat && avocadoIndex == avocadoStagesSprites.Count - 1)
+        {
+            gameObject.GetComponent<SportScript>().enabled = true;
+            avocadoEat = false;
+        }
+    }
 
     private void OnMouseDown()
     {
-        amountOfAvocadoClicks++;
-        avocadoCheck();
+        if (avocadoEat)
+        {
+            amountOfClicks++;
+            avocadoCheck();
+        }
     }
     void avocadoCheck()
     {
-        avocadoSprite = GetComponent<SpriteRenderer>();
-        if (amountOfAvocadoClicks == 5)
+        if (avocadoEat)
         {
-            avocadoIndex++;
-            avocadoSprite.sprite = avocadoStagesSprites[avocadoIndex];
-            Debug.Log(avocadoSprite.sprite.name);
-            amountOfAvocadoClicks = 0;
+            avocadoSprite = GetComponent<SpriteRenderer>();
+            if (amountOfClicks == neededClicks)
+            {
+                avocadoIndex++;
+                avocadoSprite.sprite = avocadoStagesSprites[avocadoIndex];
+                Debug.Log(avocadoSprite.sprite.name);
+                amountOfClicks = 0;
+            }
         }
     }
 }

@@ -216,8 +216,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1433834534}
   - component: {fileID: 1433834533}
-  - component: {fileID: 1433834532}
   - component: {fileID: 1433834535}
+  - component: {fileID: 1433834532}
+  - component: {fileID: 1433834536}
   m_Layer: 0
   m_Name: Avocado
   m_TagString: Untagged
@@ -237,7 +238,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9e61af8f7efad74ba1692c54c73200c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfAvocadoClicks: 0
+  avocadoStagesSprites:
+  - {fileID: -2135585597343286014, guid: 4b2a04fdbe0ef4d8da8f90eaca817cd1, type: 3}
+  - {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
+  - {fileID: 8177471321811730583, guid: 87aaca0a643d54397ba969dab4fc8875, type: 3}
+  - {fileID: -9095717837082945937, guid: 34587324d412940a79d530020c957dc0, type: 3}
+  - {fileID: -5177388603050735206, guid: cc35afd292fc349128b36a291fb3a165, type: 3}
+  amountOfClicks: 0
+  neededClicks: 7
+  avocadoIndex: 0
+  avocadoSprite: {fileID: 0}
+  avocadoEat: 1
 --- !u!212 &1433834533
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -297,7 +308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433834531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1741494, y: -0.36756948, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -319,3 +330,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1433834536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433834531}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e864d1c3275c0144ab99475231dd354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
