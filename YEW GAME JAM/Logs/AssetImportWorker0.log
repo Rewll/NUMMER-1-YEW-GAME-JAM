@@ -637,3 +637,4 @@ Received Import Request.
 Start importing Assets/Prefabs/itemslot.prefab using Guid(ebb8ff61918c7724e828bd67ebad24b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9271e1edab3246bfc491083528955c2b') in 0.006566 seconds
   Import took 0.009137 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
