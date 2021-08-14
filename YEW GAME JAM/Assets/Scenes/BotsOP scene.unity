@@ -315,7 +315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Approve cheese
+  m_text: Keur Kaas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7418537ec989c4c488b05b8c39e6b0d2, type: 2}
   m_sharedMaterial: {fileID: 5421982767135284579, guid: 7418537ec989c4c488b05b8c39e6b0d2, type: 2}
@@ -404,6 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb63c84d71f142343804d171be890bd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyTime: 0
 --- !u!1 &1664618704
 GameObject:
   m_ObjectHideFlags: 0
