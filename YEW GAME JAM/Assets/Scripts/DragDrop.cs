@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     [SerializeField] private Canvas canvas;
+    public bool moveable = true;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
 
@@ -28,7 +29,10 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        if (moveable)
+        {
+            rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)
