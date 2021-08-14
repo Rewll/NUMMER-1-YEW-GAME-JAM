@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class SportScript : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class SportScript : MonoBehaviour
     public Transform cameraPos;
     private Vector3 velocity = Vector3.zero;
     public float dampSpeed;
+    public TMP_Text golfText;
 
     [SerializeField]
     float maximaleSnelheid;
@@ -27,6 +29,7 @@ public class SportScript : MonoBehaviour
     void Start()
     {
         Debug.Log("Its sport time!");
+        FindObjectOfType<AvocadoAudioManager>().Play("GolfMuziek");
         magklikken = true;
         bxcldr2D = GetComponent<BoxCollider2D>();
         bxcldr2D.enabled = false;
@@ -34,6 +37,23 @@ public class SportScript : MonoBehaviour
         lijnTrekker = GetComponent<LineRenderer>();
         level.SetActive(true);
         lerpCamera = true;
+        golfText.enabled = true;
+        golfText.color = new Color(golfText.color.r, golfText.color.g, golfText.color.b, 255);
+        StartCoroutine(TextFade(golfText));
+    }
+
+    IEnumerator TextFade(TMP_Text text)
+    {
+        float duration = 4f;
+        float currentTime = 0f;
+        while (currentTime < duration)
+        {
+            float alpha = Mathf.Lerp(1f, 0f, currentTime / duration);
+            text.color = new Color(text.color.r, text.color.g, text.color.b, alpha);
+            currentTime += Time.deltaTime;
+            yield return null;
+        }
+        yield break;
     }
 
     private void FixedUpdate()
