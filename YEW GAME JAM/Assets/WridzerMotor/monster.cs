@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class monster : MonoBehaviour
 {
-    
-    void Update()
+    void FixedUpdate()
     {
-        transform.position += new Vector3(0, -0.01f, 0);
+        transform.position += new Vector3(0, -0.1f, 0);
     }
 }

@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Vuilnisbelt.unity
     guid: 918be563869dfaa4ba6ad2922d7269b8
   - enabled: 1
+    path: Assets/Scenes/Einde.unity
+    guid: 24023e33ba8797842b44591c5d1a344a
+  - enabled: 1
     path: Assets/Scenes/Lose.unity
     guid: 8650a98e0b696fe4483e5ffd85efce1e
   - enabled: 1

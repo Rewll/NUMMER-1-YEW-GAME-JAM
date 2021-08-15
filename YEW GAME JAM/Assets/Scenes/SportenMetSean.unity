@@ -1189,7 +1189,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5540882621796245989, guid: fdb4d61bea4d0d24caf542df7b37c13e, type: 3}
       propertyPath: totalTime
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5540882621796245989, guid: fdb4d61bea4d0d24caf542df7b37c13e, type: 3}
       propertyPath: timeTillStart

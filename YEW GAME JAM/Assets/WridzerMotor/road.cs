@@ -10,6 +10,6 @@ public class road : MonoBehaviour
         {
             transform.position += new Vector3(0, 20, 0);
         }
-        transform.position += new Vector3(0, -0.01f, 0);
+        transform.position += new Vector3(0, -0.02f, 0);
     }
 }

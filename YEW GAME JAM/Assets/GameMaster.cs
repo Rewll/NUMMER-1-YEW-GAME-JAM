@@ -28,7 +28,7 @@ public class GameMaster : MonoBehaviour
     public void Win()
     {
         gamesCompleted++;
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(9);
         Invoke("LoadNextMinigame", 3);
     }
     
@@ -40,7 +40,7 @@ public class GameMaster : MonoBehaviour
         }
         gamesCompleted++;
         health--;
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(8);
         Invoke("LoadNextMinigame", 3);
     }
 

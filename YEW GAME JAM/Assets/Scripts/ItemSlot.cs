@@ -20,7 +20,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler
                 if (amountOfThingsFound == 3)
                 {
                     FindObjectOfType<Timer>().StopTimer();
-                    Invoke("Win", 3);
+                    Invoke("Win", 1);
                 }
             }
         }
