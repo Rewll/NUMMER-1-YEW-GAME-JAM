@@ -1225,3 +1225,43 @@ System memory in use after: 87.1 MB.
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2511.
 Total: 1.707000 ms (FindLiveObjects: 0.225900 ms CreateObjectMapping: 0.073700 ms MarkObjects: 1.391600 ms  DeleteObjects: 0.014200 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001103 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.754 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1851 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.0 MB.
+System memory in use after: 87.1 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2515.
+Total: 1.680900 ms (FindLiveObjects: 0.176300 ms CreateObjectMapping: 0.063400 ms MarkObjects: 1.424000 ms  DeleteObjects: 0.016200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 717.589631 seconds.
+  path: Assets/Scenes/AVOCADO.unity
+  artifactKey: Guid(4df2f0943bc122c4692e44ea7556259d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AVOCADO.unity using Guid(4df2f0943bc122c4692e44ea7556259d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '753e6b8ff3ed909b4cdbdd959419f218') in 0.010401 seconds
+  Import took 0.013512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.718336 seconds.
+  path: Assets/Scenes/BotsOP scene.unity
+  artifactKey: Guid(fbd613f529362614090fec7165b3b844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/BotsOP scene.unity using Guid(fbd613f529362614090fec7165b3b844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c79d660658afb65c16169c880362f995') in 0.002239 seconds
+  Import took 0.005627 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
