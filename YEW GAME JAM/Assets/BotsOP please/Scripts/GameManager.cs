@@ -22,15 +22,15 @@ public class GameManager : MonoBehaviour
     {
         Invoke("SpawnDocument", 0.5f);
         Invoke("StartEnd", 10);
-        Invoke("End", 12);
+        Invoke("End", 13);
     }
     
     private void SpawnDocument()
     {
         if(!end)
-            Invoke("SpawnDocument", 0.5f);
+            Invoke("SpawnDocument", 0.8f);
         
-        Instantiate(documents[Random.Range(0, 10)], new Vector3(Random.Range(400,1600) * canvas.transform.localScale.x, 
+        Instantiate(documents[Random.Range(0, 10)], new Vector3(Random.Range(200,1800) * canvas.transform.localScale.x, 
             1500 * canvas.transform.localScale.x, 0), Quaternion.identity, canvas.transform);
     }
 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pit
   - important
+  - monster
   layers:
   - Default
   - TransparentFX

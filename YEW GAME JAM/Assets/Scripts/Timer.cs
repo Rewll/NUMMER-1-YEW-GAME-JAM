@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     public int totalTime;
     public float timeTillStart;
     public TMP_Text timerText;
+    public bool endTimerWin;
     private bool stopTimer;
     
     void Start()
@@ -34,6 +35,10 @@ public class Timer : MonoBehaviour
 
     private void Lose()
     {
+        if (endTimerWin)
+        {
+            return;
+        }
         //lose
     }
 

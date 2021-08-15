@@ -433,6 +433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShowText
       objectReference: {fileID: 0}
+    - target: {fileID: 200228773301266200, guid: 4c963dba4dd2d574bba5c5bc1dc80804, type: 3}
+      propertyPath: m_text
+      value: Keur alleen Kaas
+      objectReference: {fileID: 0}
     - target: {fileID: 200228773301266201, guid: 4c963dba4dd2d574bba5c5bc1dc80804, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
