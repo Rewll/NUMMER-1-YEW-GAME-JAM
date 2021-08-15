@@ -37,9 +37,10 @@ public class Timer : MonoBehaviour
     {
         if (endTimerWin)
         {
+            FindObjectOfType<GameMaster>().Win();
             return;
         }
-        //lose
+        FindObjectOfType<GameMaster>().Lose();
     }
 
     public void StopTimer()

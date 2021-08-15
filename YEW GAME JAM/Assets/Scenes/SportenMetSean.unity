@@ -1187,6 +1187,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 279923155}
     m_Modifications:
+    - target: {fileID: 5540882621796245989, guid: fdb4d61bea4d0d24caf542df7b37c13e, type: 3}
+      propertyPath: totalTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5540882621796245989, guid: fdb4d61bea4d0d24caf542df7b37c13e, type: 3}
+      propertyPath: timeTillStart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5540882621796245990, guid: fdb4d61bea4d0d24caf542df7b37c13e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

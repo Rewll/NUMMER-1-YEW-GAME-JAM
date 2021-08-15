@@ -5,7 +5,34 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 36dad9ae2cb8a6643aa51ea5cb12d0de
+  - enabled: 1
+    path: Assets/Scenes/AVOCADO.unity
+    guid: 4df2f0943bc122c4692e44ea7556259d
+  - enabled: 1
+    path: Assets/Scenes/BotsOP scene.unity
+    guid: fbd613f529362614090fec7165b3b844
+  - enabled: 1
+    path: Assets/Scenes/kaas.unity
+    guid: 1fdebe3b1fc5d65478a2d66ca13f7fd9
+  - enabled: 1
+    path: Assets/Scenes/MotorRijden.unity
+    guid: 17c2c4ac083f2eb45b94106445241c98
+  - enabled: 1
+    path: Assets/Scenes/SportenMetSean.unity
+    guid: ce07f267589292c4ab3b54e8eaf1d825
+  - enabled: 1
+    path: Assets/Scenes/Vuilnisbelt.unity
+    guid: 918be563869dfaa4ba6ad2922d7269b8
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: 8650a98e0b696fe4483e5ffd85efce1e
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: c7e9bb74b43938f47a8dfcac9de99312
   m_configObjects: {}

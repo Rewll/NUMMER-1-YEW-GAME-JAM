@@ -17,8 +17,17 @@ public class ItemSlot : MonoBehaviour, IDropHandler
                 eventData.pointerDrag.GetComponent<DragDrop>().moveable = false;
                 eventData.pointerDrag.GetComponent<RectTransform>().parent = transform;
                 amountOfThingsFound++;
+                if (amountOfThingsFound == 2)
+                {
+                    FindObjectOfType<Timer>().StopTimer();
+                    Invoke("Win", 1);
+                }
             }
-            Debug.Log(eventData.pointerDrag.name);
         }
+    }
+
+    private void Win()
+    {
+        FindObjectOfType<GameMaster>().Win();
     }
 }

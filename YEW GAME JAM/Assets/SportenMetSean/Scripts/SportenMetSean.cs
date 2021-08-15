@@ -9,6 +9,7 @@ public class SportenMetSean : MonoBehaviour
     public GameObject weights;
     private bool shouldPressA;
     public float weightY;
+    private bool done;
     
     void Start()
     {
@@ -27,7 +28,12 @@ public class SportenMetSean : MonoBehaviour
             Push();
             shouldPressA = true;
         }
-        
+        Debug.Log(weights.GetComponent<RectTransform>().anchoredPosition.y);
+        if (weights.GetComponent<RectTransform>().anchoredPosition.y > 417 && !done)
+        {
+            done = true;
+            FindObjectOfType<GameMaster>().Win();
+        }
     }
 
     private void Push()

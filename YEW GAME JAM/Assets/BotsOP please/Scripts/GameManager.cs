@@ -43,9 +43,9 @@ public class GameManager : MonoBehaviour
     {
         if (amoutOfCheese - amountOfCheeseCleared < 2 && notCheeseDocumentCleared < 2)
         {
-            Debug.Log("Win");
+            FindObjectOfType<GameMaster>().Win();
             return;
         }
-        Debug.Log("Lose");
+        FindObjectOfType<GameMaster>().Lose();
     }
 }

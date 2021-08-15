@@ -10,13 +10,14 @@ public class KaasformuleManager : MonoBehaviour
         if (keysPressed == 3)
         {
             FindObjectOfType<Timer>().StopTimer();
-            Invoke("Win", 1);
+            Invoke("Win", 2);
+            FindObjectOfType<Timer>().StopTimer();
             keysPressed++;
         }
     }
 
     private void Win()
     {
-        
+        FindObjectOfType<GameMaster>().Win();
     }
 }

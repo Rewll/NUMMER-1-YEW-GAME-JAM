@@ -26,7 +26,7 @@ public class Motor : MonoBehaviour
     {
         if (other.gameObject.CompareTag("monster"))
         {
-            //lose
+            FindObjectOfType<GameMaster>().Lose();
         }
     }
 
