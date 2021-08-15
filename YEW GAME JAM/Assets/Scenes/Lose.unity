@@ -363,7 +363,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: WOW YOU SUCK :(
+  m_text: verder weg van kaas :(
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7418537ec989c4c488b05b8c39e6b0d2, type: 2}
   m_sharedMaterial: {fileID: 5421982767135284579, guid: 7418537ec989c4c488b05b8c39e6b0d2, type: 2}
