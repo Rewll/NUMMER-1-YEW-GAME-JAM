@@ -52,6 +52,11 @@ public class Gatscript : MonoBehaviour
             level3.SetActive(true);
             holePos = pos3.position;
         }
+        if (levelInt == 3)
+        {
+            Debug.Log("BOtsop is een flapdrol");
+            FindObjectOfType<GameMaster>().Win();
+        }
     }
 
 
