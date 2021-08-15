@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     public int totalTime;
     public float timeTillStart;
     public TMP_Text timerText;
+    private bool stopTimer;
     
     void Start()
     {
@@ -17,11 +18,27 @@ public class Timer : MonoBehaviour
 
     private void UpdateTimer()
     {
-        if (totalTime > 0)
+        if (totalTime > 0 && !stopTimer)
         {
             totalTime--;
             timerText.text = totalTime.ToString();
             Invoke("UpdateTimer", 1);
-        }                                                       
+            return;
+        }
+        if (!stopTimer && totalTime == 0)
+        {
+            Invoke("Lose", 1);
+        }
+        
+    }
+
+    private void Lose()
+    {
+        //lose
+    }
+
+    public void StopTimer()
+    {
+        stopTimer = true;
     }
 }
